@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Bootstrap Site</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5efe8;
+        }
+        .content-section {
+            display: none;
+        }
+        .content-section.active {
+            display: block;
+        }
+        .navbar {
+            background-color: #f5efe8;
+        }
+        .right-palm {
+            z-index: 50;
+            right: 0px;
+            display: block;
+            position: absolute;
+            user-select: none;
+            pointer-events: none;
+        }
+        .left-palm {
+            z-index: 50;
+            left: 0px;
+            display: block;
+            position: absolute;
+            user-select: none;
+            pointer-events: none;
+        }
+        @media (max-width: 767px) {
+            .left-palm {
+                top: 413px;
+                width: 89px;
+            }
+            .right-palm {
+                top: 77px;
+                width: 90px;
+            }
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+            .left-palm {
+                top: 413px;
+                width: 179px;
+            }
+            .right-palm {
+                top: 77px;
+                width: 181px;
+            }
+        }
+        @media (min-width: 991px) {
+            .left-palm {
+                top: 413px;
+                width: 269px;
+            }
+            .right-palm {
+                top: 77px;
+                width: 272px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Our Website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-section="home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-section="about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-section="travel">Travel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-section="registry">Registry</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <!-- <img src="https://images.zola.com/80567eba-3780-42a4-b890-2b8434456bb2?w=500" alt="palm" class="right-palm">
+        <img src="https://images.zola.com/e9c6c07d-8dd8-4531-9898-41c50203cf64?w=500" alt="palm" class="left-palm"> -->
+        <div id="home" class="content-section text-center">
+            <h2>Home</h2>
+            <h1>Corey Edelman</h1>
+            <h6>and</h6>
+            <h1>Erin Chisholm</h1>
+            <h2>February 28th, 2026</h2>
+            <p>Tampa, FL</p>
+            <p>Countdown: 365d 12hr</p>
+        </div>
+
+        <div id="about" class="content-section text-center">
+            <!-- <img src="https://images.zola.com/80567eba-3780-42a4-b890-2b8434456bb2?w=500" alt="palm" class="right-palm"> -->
+            <h2>About Us</h2>
+            <p>We are a passionate team dedicated to providing the best service to our customers. Learn more about our story and values here.</p>
+            <p>Welcome to our website! This is the home page where you can find all the latest updates and information.</p>
+            <p>Welcome to our website! This is the home page where you can find all the latest updates and information.</p>
+            <p>Welcome to our website! This is the home page where you can find all the latest updates and information.</p>
+            <p>Welcome to our website! This is the home page where you can find all the latest updates and information.</p>
+            <p>Welcome to our website! This is the home page where you can find all the latest updates and information.</p>
+            <p>Welcome to our website! This is the home page where you can find all the latest updates and information.</p>
+            <p>Welcome to our website! This is the home page where you can find all the latest updates and information.</p>
+            <p>Welcome to our website! This is the home page where you can find all the latest updates and information.</p>
+            <p>Welcome to our website! This is the home page where you can find all the latest updates and information.</p>
+            <p>Welcome to our website! This is the home page where you can find all the latest updates and information.</p>
+            <p>Welcome to our website! This is the home page where you can find all the latest updates and information.</p>
+            <p>Welcome to our website! This is the home page where you can find all the latest updates and information.</p>
+            <p>Welcome to our website! This is the home page where you can find all the latest updates and information.</p>
+            <p>Welcome to our website! This is the home page where you can find all the latest updates and information.</p>
+            <p>Welcome to our website! This is the home page where you can find all the latest updates and information.</p>
+            <p>Welcome to our website! This is the home page where you can find all the latest updates and information.</p>
+            <p>Welcome to our website! This is the home page where you can find all the latest updates and information.</p>
+            <p>Welcome to our website! This is the home page where you can find all the latest updates and information.</p>
+            <p>Welcome to our website! This is the home page where you can find all the latest updates and information.</p>
+            <p>Welcome to our website! This is the home page where you can find all the latest updates and information.</p>
+            <p>Welcome to our website! This is the home page where you can find all the latest updates and information.</p>
+            <p>Welcome to our website! This is the home page where you can find all the latest updates and information.</p>
+            <p>Welcome to our website! This is the home page where you can find all the latest updates and information.</p>
+            <p>Welcome to our website! This is the home page where you can find all the latest updates and information.</p>
+            <p>Welcome to our website! This is the home page where you can find all the latest updates and information.</p>
+            <p>Welcome to our website! This is the home page where you can find all the latest updates and information.</p>
+            <p>Welcome to our website! This is the home page where you can find all the latest updates and information.</p>
+            <p>Welcome to our website! This is the home page where you can find all the latest updates and information.</p>
+            <p>Welcome to our website! This is the home page where you can find all the latest updates and information.</p>
+            <p>Welcome to our website! This is the home page where you can find all the latest updates and information.</p>
+            <p>Welcome to our website! This is the home page where you can find all the latest updates and information.</p>
+            <p>Welcome to our website! This is the home page where you can find all the latest updates and information.</p>
+            <p>Welcome to our website! This is the home page where you can find all the latest updates and information.</p>
+        </div>
+
+        <div id="travel" class="content-section text-center">
+            <h2>Travel</h2>
+            <p>Explore exciting destinations and plan your next adventure with our travel resources and tips.</p>
+        </div>
+
+        <div id="registry" class="content-section text-center">
+            <h2>Registry</h2>
+            <p>Find and manage gift registries for special occasions such as weddings, baby showers, and more.</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const contentSections = document.querySelectorAll('.content-section');
+            const navbarToggler = document.querySelector('.navbar-toggler');
+            const navbarCollapse = document.querySelector('.navbar-collapse');
+
+            function showSection(sectionId) {
+                contentSections.forEach(section => {
+                    section.classList.remove('active');
+                });
+                document.getElementById(sectionId).classList.add('active');
+
+                document.querySelectorAll("img.left-palm").forEach(img => img.remove());
+                document.querySelectorAll("img.right-palm").forEach(img => img.remove());
+                if (sectionId === "home") {
+                    const imgLeft = document.createElement("img");
+                    imgLeft.src = "https://images.zola.com/e9c6c07d-8dd8-4531-9898-41c50203cf64?w=500";
+                    imgLeft.className = "left-palm";
+                    document.body.appendChild(imgLeft);
+                }
+                const img = document.createElement("img");
+                img.src = "https://images.zola.com/80567eba-3780-42a4-b890-2b8434456bb2?w=500";
+                img.className = "right-palm";
+                document.body.appendChild(img);
+
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                });
+                document.querySelector(`[data-section="${sectionId}"]`).classList.add('active');
+
+                // Collapse the navbar
+                if (navbarCollapse.classList.contains('show')) {
+                    navbarCollapse.classList.remove('show');
+                    navbarToggler.setAttribute('aria-expanded', 'false');
+                }
+            }
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const sectionId = this.getAttribute('data-section');
+                    showSection(sectionId);
+                });
+            });
+
+            // Show home section by default
+            showSection('home');
+        });
+    </script>
+</body>
+</html>
