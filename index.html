@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Bootstrap Site</title>
+    <title>The Edelman's</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montaga&display=swap" rel="stylesheet">
     <style>
         body {
             background-color: #f5efe8;
+            font-family: "Montaga", serif;
+            font-weight: 400;
+            font-style: normal;
         }
         .content-section {
             display: none;
@@ -17,6 +23,37 @@
         }
         .navbar {
             background-color: #f5efe8;
+        }
+        .navbar-nav .nav-link {
+            position: relative;
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-nav .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #143016; /* Change this to your preferred color */
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover::after,
+        .navbar-nav .nav-link.active::after {
+            transform: scaleX(1);
+        }
+
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link.active {
+            color: #143016; /* Change this to your preferred color */
+        }
+        .our-name {
+            font-size: 64px;
         }
         .right-palm {
             z-index: 50;
@@ -69,7 +106,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Our Website</a>
+            <a class="navbar-brand" href="#">Erin & Corey</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -96,10 +133,9 @@
         <!-- <img src="https://images.zola.com/80567eba-3780-42a4-b890-2b8434456bb2?w=500" alt="palm" class="right-palm">
         <img src="https://images.zola.com/e9c6c07d-8dd8-4531-9898-41c50203cf64?w=500" alt="palm" class="left-palm"> -->
         <div id="home" class="content-section text-center">
-            <h2>Home</h2>
-            <h1>Corey Edelman</h1>
-            <h6>and</h6>
-            <h1>Erin Chisholm</h1>
+            <h1 class="our-name" style="padding-top: 120px;">Erin Chisholm</h1>
+            <h6>&</h6>
+            <h1 class="our-name">Corey Edelman</h1>
             <h2>February 28th, 2026</h2>
             <p>Tampa, FL</p>
             <p>Countdown: 365d 12hr</p>
@@ -107,7 +143,6 @@
 
         <div id="about" class="content-section text-center">
             <!-- <img src="https://images.zola.com/80567eba-3780-42a4-b890-2b8434456bb2?w=500" alt="palm" class="right-palm"> -->
-            <h2>About Us</h2>
             <p>We are a passionate team dedicated to providing the best service to our customers. Learn more about our story and values here.</p>
             <p>Welcome to our website! This is the home page where you can find all the latest updates and information.</p>
             <p>Welcome to our website! This is the home page where you can find all the latest updates and information.</p>
@@ -145,12 +180,10 @@
         </div>
 
         <div id="travel" class="content-section text-center">
-            <h2>Travel</h2>
             <p>Explore exciting destinations and plan your next adventure with our travel resources and tips.</p>
         </div>
 
         <div id="registry" class="content-section text-center">
-            <h2>Registry</h2>
             <p>Find and manage gift registries for special occasions such as weddings, baby showers, and more.</p>
         </div>
     </div>
