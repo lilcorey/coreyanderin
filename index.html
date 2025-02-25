@@ -196,6 +196,7 @@
             const contentSections = document.querySelectorAll('.content-section');
             const navbarToggler = document.querySelector('.navbar-toggler');
             const navbarCollapse = document.querySelector('.navbar-collapse');
+            const navbarBrand = document.querySelector('.navbar-brand');
 
             function showSection(sectionId) {
                 contentSections.forEach(section => {
@@ -235,6 +236,11 @@
                     const sectionId = this.getAttribute('data-section');
                     showSection(sectionId);
                 });
+            });
+
+            navbarBrand.addEventListener('click', function(e) {
+                e.preventDefault();
+                showSection('home');
             });
 
             // Show home section by default
